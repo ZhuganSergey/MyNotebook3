@@ -1,0 +1,12 @@
+<template>
+    <template if:true={contactList}>
+        <ul>
+            <template for:each={contactList} for:item="contact">
+                <li key={contact.Id}>
+                    <span>{contact.FirstName}</span>
+                    <span>{contact.Phone}</span>
+                </li>
+            </template>
+        </ul>
+    </template>
+</template>
